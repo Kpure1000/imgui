@@ -26,8 +26,10 @@ project "ImGui"
 
 	filter "configurations:Debug"
 		runtime "Debug"
+		buildoptions "/MTd"
 		symbols "on"
 
 	filter "configurations:Release"
 		runtime "Release"
+		buildoptions "/MT"
 		optimize "on"
